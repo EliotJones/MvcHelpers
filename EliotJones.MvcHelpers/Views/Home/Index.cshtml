@@ -1,6 +1,24 @@
-﻿@{
+﻿@model EliotJones.MvcHelpers.ViewModels.PepperStuff
+@{
     ViewBag.Title = "Home Page";
 }
 
 <h2>Home Page</h2>
 <p>To use this:</p>
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(m => m.Quantity)
+        <br /><br />
+        @Html.EditorFor(m => m.Quantity)
+    </div>
+    <br /><br />
+    <div>
+        @Html.Label("Choose a pepper")
+        <br /><br />
+        @Html.EditorFor(m => m.Peppers)
+    </div>
+
+    <input type="submit" value="Post" />
+}
