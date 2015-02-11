@@ -58,7 +58,7 @@ You can then map your collection to the class, you only need to provide the poss
         }
     };
 
-You can also provide the SelectedValue if the radio buttons are on a edit view.
+You can also provide the SelectedValue if the radio buttons are on an edit view.
 
 Once you have your ViewModel you can get the radio button view by simply calling:
 

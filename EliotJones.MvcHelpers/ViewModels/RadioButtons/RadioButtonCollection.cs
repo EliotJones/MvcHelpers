@@ -6,6 +6,23 @@
 
     public abstract class RadioButtonCollection<TKey, TValue>
     {
+        public RadioButtonCollection()
+        {
+
+        }
+
+        public RadioButtonCollection(IEnumerable<KeyValuePair<TKey, TValue>> keysAndValues)
+        {
+            var possibleValues = new List<RadioButtonPair<TKey, TValue>>();
+
+            foreach (var kvp in keysAndValues)
+            {
+                possibleValues.Add(new RadioButtonPair<TKey, TValue>(kvp));
+            }
+
+            PossibleValues = possibleValues;
+        }
+
         public virtual IList<RadioButtonPair<TKey, TValue>> PossibleValues { get; set; }
 
         [Required(ErrorMessage = "This answer is required")]

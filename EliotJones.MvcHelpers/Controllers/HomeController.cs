@@ -36,7 +36,19 @@
                 }
             };
 
-            return View(capsicums);
+            PepperStuff capsicumes = new PepperStuff
+            {
+                Peppers = new StringIntRadioButtons(
+                    new Dictionary<string, int>
+                    {
+                        {"gromlp", 4},
+                        {"thhhtr", 5},
+                        {"htrh", 6}
+                    }
+                    )
+            };
+
+            return View(capsicumes);
         }
 
         [HttpPost]
