@@ -14,11 +14,18 @@
                 Quantity = 0,
                 Peppers = new StringIntCollection
                 {
-                    PossibleValues = new List<KeyValuePair<string, int>>
+                    PossibleValues = new List<RadioButtonPair<string, int>>
                     {
-                        new KeyValuePair<string, int>("red", 1),
-                        new KeyValuePair<string, int>("green", 2),
-                        new KeyValuePair<string, int>("yellow", 3)
+                        new RadioButtonPair<string, int>
+                        {
+                            Key = "red", 
+                            Value = 1
+                        },
+                        new RadioButtonPair<string, int>
+                        {
+                            Key = "green", 
+                            Value = 2
+                        }
                     }
                 }
             };
@@ -29,6 +36,8 @@
         [HttpPost]
         public ActionResult Index(PepperStuff capsicums)
         {
+            IList<RadioButtonPair<string, int>> longNameSoHoveringIsEasy = capsicums.Peppers.PossibleValues;
+
             if (!ModelState.IsValid)
             {
                 return View(capsicums);
