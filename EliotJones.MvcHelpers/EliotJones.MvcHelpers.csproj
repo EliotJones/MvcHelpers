@@ -124,7 +124,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\PepperType.cs" />
-    <Compile Include="ViewModels\RadioButtonCollection.cs" />
+    <Compile Include="ViewModels\RadioButtons\RadioButtonCollection.cs" />
+    <Compile Include="ViewModels\RadioButtons\RadioButtonPair.cs" />
+    <Compile Include="ViewModels\RadioButtons\StringGuidRadioButtons.cs" />
+    <Compile Include="ViewModels\RadioButtons\StringIntRadioButtons.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
@@ -152,7 +155,8 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Shared\EditorTemplates\StringIntCollection.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\StringIntRadioButtons.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\StringGuidRadioButtons.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,8 +1,10 @@
 ﻿namespace EliotJones.MvcHelpers.ViewModels
 {
+    using EliotJones.MvcHelpers.ViewModels.RadioButtons;
+
     public class PepperStuff
     {
-        public StringIntCollection Peppers { get; set; }
+        public StringIntRadioButtons Peppers { get; set; }
 
         public int Quantity { get; set; }
     }
