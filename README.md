@@ -4,6 +4,8 @@
 
 This sample MVC project provides classes and Editor templates for Mutually Exclusive Radio Buttons in MVC5.
 
+![example of radio buttons](https://github.com/EliotJones/MvcHelpers/blob/master/example.png)
+
 ## Installation ##
 
 The aim is to provide a NuGet package to add the required files to an MVC project. In the meantime please follow the steps to install:
