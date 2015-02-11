@@ -2,30 +2,37 @@
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.Linq;
 
-    public class RadioButtonCollection<TKey, TValue, TValueNullable>
+    public class RadioButtonCollection<TKey, TValue, TKeyNullable, TValueNullable>
     {
         public virtual IList<RadioButtonPair<TKey, TValue>> PossibleValues { get; set; }
 
-        public virtual TValueNullable SelectedValue { get; set; }
-
-        public TKey SelectedKey { get; set; }
+        public virtual RadioButtonPair<TKey, TValue> SelectedValue { get; set; }
     }
 
-    public class RadioButtonPair<TKey, TValue>
+    public struct RadioButtonPair<TKey, TValue>
     {
-        public TKey Key { get; set; }
+        public RadioButtonPair(TKey key, TValue value)
+        {
+            this.key = key;
+            this.value = value;
+        }
 
-        public TValue Value { get; set; }
+        private TKey key;
+        public TKey Key { get { return key; } set { key = value;} }
+
+        private TValue value;
+        public TValue Value { get { return value; } set { this.value = value;} }
     }
 
-    public class StringIntCollection : RadioButtonCollection<string, int, int?>
+    public class StringIntCollection : RadioButtonCollection<string, int, string, int?>
     {
     }
 
     public class StringIntCollectionRequired : StringIntCollection
     {
         [Required]
-        public override int? SelectedValue { get; set; }
+        public override RadioButtonPair<string, int> SelectedValue { get; set; }
     }
 }
