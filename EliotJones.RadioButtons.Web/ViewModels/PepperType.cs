@@ -1,4 +1,4 @@
-﻿namespace EliotJones.RadioButtons.WebSample.ViewModels
+﻿namespace EliotJones.RadioButtons.Web.ViewModels
 {
     using EliotJones.RadioButtons.ViewModels;
 

@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EliotJones.RadioButtons.WebSample</RootNamespace>
-    <AssemblyName>EliotJones.RadioButtons.WebSample</AssemblyName>
+    <RootNamespace>EliotJones.RadioButtons.Web</RootNamespace>
+    <AssemblyName>EliotJones.RadioButtons.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -199,6 +199,7 @@
   </ProjectExtensions>
   <PropertyGroup>
     <PostBuildEvent>xcopy "$(ProjectDir)$(OutDir)$(SolutionName)$(TargetExt)" "$(SolutionDir)nuget\Target\lib\net45" /Y /I
+xcopy "$(ProjectDir)$(OutDir)$(SolutionName).xml" "$(SolutionDir)nuget\Target\lib\net45" /Y /I
 xcopy "$(ProjectDir)Views\Shared\EditorTemplates" "$(SolutionDir)nuget\Target\content\Views\Shared\EditorTemplates" /Y /I
 $(SolutionDir)nuget\nuget.exe pack $(SolutionDir)nuget\Target\$(SolutionName).nuspec -OutputDirectory $(SolutionDir)nuget</PostBuildEvent>
   </PropertyGroup>

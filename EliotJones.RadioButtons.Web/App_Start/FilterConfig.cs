@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace EliotJones.RadioButtons.WebSample
+namespace EliotJones.RadioButtons.Web
 {
     public class FilterConfig
     {

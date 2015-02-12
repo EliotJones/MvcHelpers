@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(EliotJones.RadioButtons.WebSample.Startup))]
-namespace EliotJones.RadioButtons.WebSample
+[assembly: OwinStartupAttribute(typeof(EliotJones.RadioButtons.Web.Startup))]
+namespace EliotJones.RadioButtons.Web
 {
     using System.Web.Mvc;
     using System.Web.Optimization;

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EliotJones.RadioButtons.WebSample", "EliotJones.RadioButtons.WebSample\EliotJones.RadioButtons.WebSample.csproj", "{8C833BC9-C73A-4B7B-A479-0C4B98234361}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EliotJones.RadioButtons.Web", "EliotJones.RadioButtons.Web\EliotJones.RadioButtons.Web.csproj", "{8C833BC9-C73A-4B7B-A479-0C4B98234361}"
 	ProjectSection(ProjectDependencies) = postProject
 		{76BB23B7-33BD-46BD-94EF-12849E4EE8EF} = {76BB23B7-33BD-46BD-94EF-12849E4EE8EF}
 	EndProjectSection

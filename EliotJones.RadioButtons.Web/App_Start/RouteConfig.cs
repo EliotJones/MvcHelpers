@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace EliotJones.RadioButtons.WebSample
+namespace EliotJones.RadioButtons.Web
 {
     public class RouteConfig
     {
