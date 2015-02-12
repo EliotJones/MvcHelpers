@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+    <metadata>
+        <id>EliotJones.RadioButtons</id>
+        <version>0.1</version>
+        <title>Mvc Radio Buttons</title>
+        <authors>Eliot</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Adds radio buttons to mvc using EditorFor</description>
+        <language>en-US</language>
+        <tags>mvc radio buttons</tags>
+    </metadata>
+</package>
