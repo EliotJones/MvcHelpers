@@ -1,4 +1,4 @@
-# EliotJones.MvcHelpers
+# EliotJones.RadioButtons.WebSample
 
 ## Introduction ##
 
@@ -10,8 +10,8 @@ This sample MVC project provides classes and Editor templates for Mutually Exclu
 
 The aim is to provide a NuGet package to add the required files to an MVC project. In the meantime please follow the steps to install:
 
-1. Get the ```EliotJones.MvcHelpers\ViewModels\RadioButtons\``` view model classes and put them in your own project.
-2. Get the ```EliotJones.MvcHelpers\Views\Shared\EditorTemplates\``` views and put them in the corresponding folder in your project. **It is important the views are in** ```\Views\Shared\EditorTemplates```!
+1. Get the ```EliotJones.RadioButtons.WebSample\ViewModels\RadioButtons\``` view model classes and put them in your own project.
+2. Get the ```EliotJones.RadioButtons.WebSample\Views\Shared\EditorTemplates\``` views and put them in the corresponding folder in your project. **It is important the views are in** ```\Views\Shared\EditorTemplates```!
 3. Resolve namespace issues in both the ViewModels and the Views.
 
 ## Usage ##

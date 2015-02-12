@@ -1,6 +1,6 @@
-﻿namespace EliotJones.MvcHelpers.Controllers
+﻿namespace EliotJones.RadioButtons.WebSample.Controllers
 {
-    using EliotJones.MvcHelpers.ViewModels;
+    using EliotJones.RadioButtons.WebSample.ViewModels;
     using EliotJones.RadioButtons.ViewModels;
     using System;
     using System.Collections.Generic;

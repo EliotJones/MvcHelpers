@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace EliotJones.MvcHelpers
+namespace EliotJones.RadioButtons.WebSample
 {
     public class BundleConfig
     {
