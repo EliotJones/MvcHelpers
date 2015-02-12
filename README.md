@@ -1,18 +1,22 @@
-# EliotJones.RadioButtons.WebSample
+# MVC Radio Buttons
 
 ## Introduction ##
 
-This sample MVC project provides classes and Editor templates for Mutually Exclusive Radio Buttons in MVC5.
+This project provides classes and Editor templates for Mutually Exclusive Radio Buttons in MVC5. It adds a class which can be used with:
+
+```@Html.EditorFor()```
 
 ![example of radio buttons](https://github.com/EliotJones/MvcHelpers/blob/master/example.png)
 
 ## Installation ##
 
-The aim is to provide a NuGet package to add the required files to an MVC project. In the meantime please follow the steps to install:
+The NuGet package can be installed using the NuGet GUI or Package Manager Console:
 
-1. Get the ```EliotJones.RadioButtons.WebSample\ViewModels\RadioButtons\``` view model classes and put them in your own project.
-2. Get the ```EliotJones.RadioButtons.WebSample\Views\Shared\EditorTemplates\``` views and put them in the corresponding folder in your project. **It is important the views are in** ```\Views\Shared\EditorTemplates```!
-3. Resolve namespace issues in both the ViewModels and the Views.
+```Install-Package EliotJones.RadioButtons```
+
+To uninstall simply remove the NuGet or:
+
+```Uninstall-Package EliotJones.RadioButtons```
 
 ## Usage ##
 
