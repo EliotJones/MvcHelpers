@@ -1,4 +1,5 @@
-﻿@model EliotJones.RadioButtons.ViewModels.StringIntRadioButtons
+﻿@model EliotJones.RadioButtons.ViewModels.StringStringRadioButtons
+
 
 <div class="ej-radiobutton-block">
 
@@ -17,7 +18,7 @@
             <label for="@nameForThisValue" class="ej-radiobutton-label">
 
                 @Html.RadioButtonFor(m => m.SelectedValue, Model.PossibleValues[i].Value,
-                            htmlAttributes: new { id = nameForThisValue })
+                            htmlAttributes: new { id = nameForThisValue, @class = "ej-radiobutton-button" })
 
                 <span class="ej-radiobutton-span">
                     @Html.DisplayFor(m => m.PossibleValues[i].Key)

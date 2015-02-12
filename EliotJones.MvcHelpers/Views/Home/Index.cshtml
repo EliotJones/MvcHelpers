@@ -19,6 +19,10 @@
         <br /><br />
         @Html.EditorFor(m => m.Peppers)
     </div>
-
+    <div>
+        @Html.Label("Choose a chef")
+        <br /><br />
+        @Html.EditorFor(m => m.Chefs)
+    </div>
     <input type="submit" value="Post" />
 }

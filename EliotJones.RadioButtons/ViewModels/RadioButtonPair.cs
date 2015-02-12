@@ -1,4 +1,4 @@
-﻿namespace EliotJones.MvcHelpers.ViewModels.RadioButtons
+﻿namespace EliotJones.RadioButtons.ViewModels
 {
     using System.Collections.Generic;
 

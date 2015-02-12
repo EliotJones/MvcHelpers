@@ -1,9 +1,9 @@
-﻿namespace EliotJones.MvcHelpers.ViewModels.RadioButtons
+﻿namespace EliotJones.RadioButtons.ViewModels
 {
     using System;
     using System.Collections.Generic;
 
-    public class StringGuidRadioButtons : RadioButtonCollection<string, Guid>
+    public class StringGuidRadioButtons : KeyValueRadioButtons<string, Guid>
     {
         public StringGuidRadioButtons()
         {

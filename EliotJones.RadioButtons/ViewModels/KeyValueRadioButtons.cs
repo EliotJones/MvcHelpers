@@ -1,17 +1,17 @@
-﻿namespace EliotJones.MvcHelpers.ViewModels.RadioButtons
+﻿namespace EliotJones.RadioButtons.ViewModels
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.Linq;
 
-    public abstract class RadioButtonCollection<TKey, TValue>
+    public abstract class KeyValueRadioButtons<TKey, TValue>
     {
-        public RadioButtonCollection()
+        public KeyValueRadioButtons()
         {
 
         }
 
-        public RadioButtonCollection(IEnumerable<KeyValuePair<TKey, TValue>> keysAndValues)
+        public KeyValueRadioButtons(IEnumerable<KeyValuePair<TKey, TValue>> keysAndValues)
         {
             var possibleValues = new List<RadioButtonPair<TKey, TValue>>();
 

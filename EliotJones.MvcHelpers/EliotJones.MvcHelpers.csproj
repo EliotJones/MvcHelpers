@@ -124,10 +124,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\PepperType.cs" />
-    <Compile Include="ViewModels\RadioButtons\RadioButtonCollection.cs" />
-    <Compile Include="ViewModels\RadioButtons\RadioButtonPair.cs" />
-    <Compile Include="ViewModels\RadioButtons\StringGuidRadioButtons.cs" />
-    <Compile Include="ViewModels\RadioButtons\StringIntRadioButtons.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
@@ -157,6 +153,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Shared\EditorTemplates\StringIntRadioButtons.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\StringGuidRadioButtons.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\StringStringRadioButtons.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\StringRadioButtons.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -164,6 +162,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EliotJones.RadioButtons\EliotJones.RadioButtons.csproj">
+      <Project>{76bb23b7-33bd-46bd-94ef-12849e4ee8ef}</Project>
+      <Name>EliotJones.RadioButtons</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
