@@ -4,7 +4,7 @@
 
 This project provides classes and Editor templates for Mutually Exclusive Radio Buttons in MVC5. It adds a class which can be used with:
 
-```@Html.EditorFor()```
+``@Html.EditorFor()``
 
 ![example of radio buttons](https://github.com/EliotJones/MvcHelpers/blob/master/example.png)
 
