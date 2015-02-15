@@ -6,10 +6,7 @@
 
     public abstract class KeyValueRadioButtons<TKey, TValue>
     {
-        public KeyValueRadioButtons()
-        {
-
-        }
+        public KeyValueRadioButtons() { }
 
         public KeyValueRadioButtons(IEnumerable<KeyValuePair<TKey, TValue>> keysAndValues)
         {
