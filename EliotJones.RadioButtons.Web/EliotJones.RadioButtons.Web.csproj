@@ -198,10 +198,7 @@
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(ProjectDir)$(OutDir)$(SolutionName)$(TargetExt)" "$(SolutionDir)nuget\Target\lib\net45" /Y /I
-xcopy "$(ProjectDir)$(OutDir)$(SolutionName).xml" "$(SolutionDir)nuget\Target\lib\net45" /Y /I
-xcopy "$(ProjectDir)Views\Shared\EditorTemplates" "$(SolutionDir)nuget\Target\content\Views\Shared\EditorTemplates" /Y /I
-$(SolutionDir)nuget\nuget.exe pack $(SolutionDir)nuget\Target\$(SolutionName).nuspec -OutputDirectory $(SolutionDir)nuget</PostBuildEvent>
+    <PostBuildEvent>$(SolutionDir)nuget\nuget.exe pack $(SolutionDir)nuget\$(SolutionName).nuspec -OutputDirectory $(SolutionDir)nuget</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

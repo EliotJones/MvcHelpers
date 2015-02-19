@@ -10,4 +10,9 @@
         <language>en-US</language>
         <tags>mvc radio buttons</tags>
     </metadata>
+	<files>
+		<file src="..\EliotJones.RadioButtons.Web\Views\Shared\EditorTemplates\*.cshtml" target="Content\Views\Shared\EditorTemplates\"/>
+		<file src="..\EliotJones.RadioButtons\bin\Debug\EliotJones.RadioButtons.dll" target="lib\net45"/>
+		<file src="..\EliotJones.RadioButtons\bin\Debug\EliotJones.RadioButtons.xml" target="lib\net45"/>
+	</files>
 </package>
