@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EliotJones.RadioButtons", "EliotJones.RadioButtons\EliotJones.RadioButtons.csproj", "{76BB23B7-33BD-46BD-94EF-12849E4EE8EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EliotJones.RadioButtons.NuGetCheckSite", "EliotJones.RadioButtons.NuGetCheckSite\EliotJones.RadioButtons.NuGetCheckSite.csproj", "{05ED7C4E-B1E4-49BC-AE7E-C72A851A86D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{76BB23B7-33BD-46BD-94EF-12849E4EE8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76BB23B7-33BD-46BD-94EF-12849E4EE8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76BB23B7-33BD-46BD-94EF-12849E4EE8EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05ED7C4E-B1E4-49BC-AE7E-C72A851A86D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05ED7C4E-B1E4-49BC-AE7E-C72A851A86D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05ED7C4E-B1E4-49BC-AE7E-C72A851A86D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05ED7C4E-B1E4-49BC-AE7E-C72A851A86D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
