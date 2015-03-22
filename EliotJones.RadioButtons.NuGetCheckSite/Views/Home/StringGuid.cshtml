@@ -1,0 +1,24 @@
+﻿@model EliotJones.RadioButtons.NuGetCheckSite.ViewModels.RapperRating
+
+@{
+    ViewBag.Title = "String Guid Radio Buttons";
+}
+
+<h1>String Guid Radio Buttons</h1>
+<hr/>
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(model => model.Rappers)
+        <br/>
+        @Html.EditorFor(model => model.Rappers)
+    </div>
+    <div>
+        @Html.LabelFor(model => model.Rating)
+        <br/>
+        @Html.EditorFor(model => model.Rating)
+    </div>
+
+    <input type="submit" value="Post" />
+}
+
