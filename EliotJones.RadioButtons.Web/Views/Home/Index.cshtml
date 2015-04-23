@@ -21,8 +21,20 @@
     </div>
     <div>
         @Html.Label("Choose a chef")
-        <br /><br />
+        <br/><br/>
         @Html.EditorFor(m => m.Chefs)
     </div>
+    <div>
+        @Html.Label("Choose a national body")
+        <br/><br/>
+        @Html.EditorFor(m => m.NationalBodies)
+    </div>
+    <hr/>
+    <div>
+        @Html.Label("Choose a bee")
+        <br /><br />
+        @Html.EditorFor(m => m.Bees)
+    </div>
+
     <input type="submit" value="Post" />
 }

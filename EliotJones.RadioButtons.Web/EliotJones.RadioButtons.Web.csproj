@@ -123,6 +123,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\Abbreviations.cs" />
     <Compile Include="ViewModels\PepperType.cs" />
   </ItemGroup>
   <ItemGroup>

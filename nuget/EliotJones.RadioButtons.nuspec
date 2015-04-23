@@ -2,17 +2,19 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
     <metadata>
         <id>EliotJones.RadioButtons</id>
-        <version>0.1</version>
+        <version>0.3</version>
         <title>Mvc Radio Buttons</title>
         <authors>Eliot</authors>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <iconUrl>https://raw.githubusercontent.com/UglyToad/DataTable/master/uglytoadsmall.png</iconUrl>
+        <projectUrl>https://github.com/EliotJones/MvcRadioButtons</projectUrl>
         <description>Adds radio buttons to mvc using EditorFor</description>
         <language>en-US</language>
         <tags>mvc radio buttons</tags>
     </metadata>
 	<files>
 		<file src="..\EliotJones.RadioButtons.Web\Views\Shared\EditorTemplates\*.cshtml" target="Content\Views\Shared\EditorTemplates\"/>
-		<file src="..\EliotJones.RadioButtons\bin\Debug\EliotJones.RadioButtons.dll" target="lib\net45"/>
-		<file src="..\EliotJones.RadioButtons\bin\Debug\EliotJones.RadioButtons.xml" target="lib\net45"/>
+		<file src="..\EliotJones.RadioButtons\bin\Release\EliotJones.RadioButtons.dll" target="lib\net45"/>
+		<file src="..\EliotJones.RadioButtons\bin\Release\EliotJones.RadioButtons.xml" target="lib\net45"/>
 	</files>
 </package>

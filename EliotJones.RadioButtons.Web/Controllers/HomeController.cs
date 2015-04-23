@@ -13,14 +13,14 @@
         [HttpGet]
         public ActionResult Index()
         {
-            PepperStuff capsicumes = new PepperStuff
+            PepperStuff capsicums = new PepperStuff
             {
                 Peppers = new StringGuidRadioButtons(
                     new Dictionary<string, Guid>
                     {
-                        {"gromlp", Guid.NewGuid()},
-                        {"thhhtr", Guid.NewGuid()},
-                        {"htrh", Guid.NewGuid()}
+                        {"Red", Guid.NewGuid()},
+                        {"Yellow", Guid.NewGuid()},
+                        {"Green", Guid.NewGuid()}
                     }
                     )
             };
@@ -28,13 +28,16 @@
             List<string> a = new List<string>
             {
                 "Billy",
-                "Snoppin",
-                "Rapper"
+                "Jean",
+                "Soup"
             };
 
-            capsicumes.Chefs = new StringRadioButtons(a);
+            capsicums.Chefs = new StringRadioButtons(a);
 
-            return View(capsicumes);
+            capsicums.NationalBodies = StringIntRadioButtons.FromEnum(Abbreviations.UNHCR);
+            capsicums.Bees = StringRadioButtons.FromEnum<Bees>();
+
+            return View(capsicums);
         }
 
         [HttpPost]
